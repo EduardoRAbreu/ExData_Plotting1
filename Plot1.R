@@ -29,7 +29,7 @@ if(!require(data.table)) {
 
 columns <- colnames(fread(filename2, nrows = 1))
 
-powerconsumption <- fread(filename2, skip = "1/2/2007", nrows = 2880, sep = ";", header = TRUE, col.names = columns, na.strings = "?")
+powerconsumption <- fread(filename2, skip = "1/2/2007", nrows = 2880, sep = ";", header = FALSE, col.names = columns, na.strings = "?")
 
 ## Plot 1
 
